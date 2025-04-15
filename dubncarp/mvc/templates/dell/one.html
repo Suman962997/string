@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        SUMAN J
+    </title>
+  </head>  
+  <body>
+<h1>This is heading</h1>
+<table border="1">
+<tr>
+    <th>Customer_name</th>
+    <th>Customer_mail</th>
+    <th>Customer_phone_number</th>
+</tr>
+{%for x in mycustomer%}
+
+<tr>
+    <td>{{x.customer_name}}</td>
+    <td>{{x.customer_email}}</td>
+    <td>{{x.customer_contact}}</td>
+</tr>
+{% endfor %}
+</table>
+
+  </body>
+</html>
